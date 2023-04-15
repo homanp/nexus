@@ -24,6 +24,72 @@ The purpose of Nexus is to provide a standardized framework for AI-to-AI communi
 
 - **Costs Saving** Nexus includes mechanisms to ensure cuts savings trough only-llm-when-needed communications
 
-## Conclusion
-Nexus is an open source protocol for AI-to-AI communication that provides a framework for secure, reliable, and efficient communication between AI systems. By using Nexus, AI systems can collaborate more effectively, solving complex problems and achieving their goals more efficiently.
+## RFC
 
+Sage Tech Labs Inc.
+Request for Comments: 0001
+Category: Experimental
+Title: NEXUS: A Bot-to-Bot Communication Protocol Minimizing the Use of Large Language Models
+Date: April 04 2023
+
+1. Introduction
+
+NEXUS is an experimental communication protocol designed for bot-to-bot communication while minimizing the dependency on large language models (LLMs) whenever possible. It incorporates message validation, caching mechanisms, and OpenAPI-based communication to reduce the need for intensive LLM usage.
+
+2. Terminology
+
+- LLM: Large Language Model
+- Assistant: A bot based on an LLM
+- Agent: A specialized module initiated by an Assistant to handle a specific request
+- OpenAPI: A specification for building APIs
+
+3. Protocol Overview
+
+3.1. Message Validation and Authentication
+- Assistants and Agents use a predefined validation schema and authentication system to ensure secure and compliant communication.
+
+3.2. OpenAPI Implementation
+- Assistants and Agents communicate using RESTful APIs based on the OpenAPI specification to ensure interoperability and easy integration.
+
+3.3. Caching System
+- Assistants cache OpenAPI definitions of the services and agents they interact with, and implement intelligent cache updating algorithms to maintain relevant information.
+
+3.4. Direct Service Communication
+- If an Agent already knows a request, it can handle it directly using the required service's API without communicating with another Assistant, improving efficiency.
+
+3.5. Learning and Adaptation Mechanisms
+- Assistants and Agents employ supervised or unsupervised machine learning techniques to adapt to new or unknown situations.
+
+3.6. Modular and Scalable Architecture
+- NEXUS has a modular and scalable architecture to accommodate different environments and workload requirements.
+
+4. Protocol Specification
+
+4.1. Message Structure
+- Messages include metadata for validation and authentication purposes.
+
+4.2. OpenAPI Communication
+- Assistants and Agents exchange information using OpenAPI-based communication, allowing for a standardized and open approach to sharing data.
+
+4.3. Caching and Cache Updates
+- Assistants maintain a local or cached repository of OpenAPI definitions and update it based on intelligent cache updating algorithms.
+
+4.4. Direct Service Interaction
+- If an Agent can handle a request directly, it will use the Service B's API to obtain the necessary information without communicating with Assistant B.
+
+5. Security Considerations
+
+- Authentication and message validation mechanisms must be in place to ensure secure communication between Assistants and Agents.
+
+6. IANA Considerations
+
+- This document has no actions for IANA.
+
+7. Acknowledgements
+
+- The author would like to thank the user for their insights and suggestions in the development of the NEXUS protocol.
+
+8. References
+
+- Fielding, R., "Architectural Styles and the Design of Network-based Software Architectures", 2000.
+- OpenAPI Initiative, "OpenAPI Specification", https://www.openapis.org/.
