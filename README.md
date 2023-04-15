@@ -22,6 +22,8 @@ The purpose of Nexus is to provide a standardized framework for AI-to-AI communi
 
 - **Reliability:** Nexus includes mechanisms to ensure reliable communication, minimizing the risk of lost or corrupted data.
 
+- **Costs Saving** Nexus includes mechanisms to ensure cuts savings trough only-llm-when-needed communications
+
 ## Conclusion
 Nexus is an open source protocol for AI-to-AI communication that provides a framework for secure, reliable, and efficient communication between AI systems. By using Nexus, AI systems can collaborate more effectively, solving complex problems and achieving their goals more efficiently.
 
