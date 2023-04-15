@@ -1,4 +1,4 @@
-# Nexus: An Open-Source Protocol for Secure and Efficient AI-to-AI Communication
+# 🌐 Nexus
 Nexus is an open source protocol for AI-to-AI communication. AI systems often need to communicate with each other to share data, coordinate actions, and solve problems collaboratively. By providing a framework for communication, Nexus facilitates interoperability between different AI systems and enables more efficient and effective collaboration.
 
 ## Purpose of Nexus
